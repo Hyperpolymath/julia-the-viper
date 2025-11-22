@@ -1,0 +1,89 @@
+PALIMPSEST SOFTWARE LICENSE v0.8
+
+Copyright (c) 2025 Julia the Viper Contributors
+
+This software is offered under the Palimpsest Software License v0.8,
+emphasizing collaborative, politically autonomous software development.
+
+PREAMBLE
+
+The Palimpsest License recognizes that software is a living, evolving
+artifact that should serve human flourishing while respecting creator
+autonomy and community collaboration.
+
+GRANTS
+
+1. USE: You may use this software for any purpose, commercial or
+   non-commercial, without restriction.
+
+2. STUDY: You may study how the software works and adapt it to your needs.
+   Source code access is provided for this purpose.
+
+3. SHARE: You may redistribute unmodified copies of this software.
+
+4. MODIFY: You may modify the software and distribute modified versions,
+   subject to the conditions below.
+
+CONDITIONS
+
+A. ATTRIBUTION
+   - Preserve copyright notices and this license text
+   - Credit original authors in derivative works
+   - Clearly mark modifications from the original
+
+B. SHARE-ALIKE
+   - Modified versions must be licensed under compatible terms
+   - Compatible licenses: MIT, Apache 2.0, GPL 3.0+, Palimpsest 0.8+
+   - Proprietary relicensing prohibited without explicit permission
+
+C. POLITICAL AUTONOMY
+   - This software shall not be used to suppress human rights
+   - Shall not be used for surveillance without informed consent
+   - Shall not be used for autonomous weapons systems
+   - Shall not be used to discriminate based on protected characteristics
+
+D. COLLABORATIVE SPIRIT
+   - Bug fixes and security improvements should be contributed back (encouraged, not required)
+   - Public modifications should link to original project
+   - Commercial users encouraged to sponsor development
+
+E. EMOTIONAL SAFETY
+   - Contributors have right to reversibility (mistakes are learning)
+   - Anxiety reduction valued over performance extraction
+   - No obligation for unpaid labor beyond initial contribution
+
+LIMITATIONS
+
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+INTERPRETATION
+
+This license is designed to be compatible with open source principles while
+adding ethical constraints. If any clause conflicts with your local laws,
+the remaining clauses remain valid.
+
+For questions about this license, contact: license@julia-viper.dev
+
+COMPATIBILITY
+
+This license is designed to be compatible with:
+- MIT License (for permissive use)
+- Apache 2.0 License (for patent grants)
+- GPL 3.0+ (for copyleft requirements)
+
+You may choose to use this software under MIT terms if Palimpsest conditions
+are incompatible with your use case.
+
+---
+
+Palimpsest Software License v0.8
+https://palimpsest.license (hypothetical - license under development)
+
+Last updated: 2025-01-22
