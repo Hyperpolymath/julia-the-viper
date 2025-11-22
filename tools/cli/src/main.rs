@@ -6,6 +6,9 @@ use std::fs;
 use std::io::{self, Read};
 use std::path::PathBuf;
 
+mod rsr_check;
+use rsr_check::RsrChecker;
+
 #[derive(Parser)]
 #[command(name = "jtv")]
 #[command(about = "Julia the Viper - Harvard Architecture Language", long_about = None)]
@@ -59,6 +62,9 @@ enum Commands {
 
     /// Display version and build information
     Version,
+
+    /// Check RSR (Rhodium Standard Repository) compliance
+    RsrCheck,
 }
 
 fn main() {
@@ -91,6 +97,10 @@ fn main() {
         }
         Commands::Version => {
             print_version();
+        }
+        Commands::RsrCheck => {
+            let mut checker = RsrChecker::new();
+            checker.check_all();
         }
     }
 }
