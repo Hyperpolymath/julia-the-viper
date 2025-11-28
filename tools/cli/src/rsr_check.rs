@@ -3,6 +3,7 @@
 //
 // RSR (Rhodium Standard Repository) Compliance Checker
 
+// RSR (Rhodium Standard Repository) Compliance Checker
 use colored::*;
 use std::fs;
 use std::path::Path;

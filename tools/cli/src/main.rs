@@ -3,6 +3,7 @@
 //
 // Julia the Viper - Command Line Interface
 
+// Julia the Viper - Command Line Interface
 use clap::{Parser, Subcommand};
 use colored::*;
 use jtv_lang::{parse_program, Interpreter};
