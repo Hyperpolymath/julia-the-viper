@@ -1,0 +1,105 @@
+# Git Attributes for Julia the Viper
+# This file defines how Git handles different file types
+
+# Auto-detect text files and perform LF normalization
+* text=auto
+
+# Source code
+*.rs text eol=lf
+*.ts text eol=lf
+*.js text eol=lf
+*.jtv text eol=lf
+*.pest text eol=lf
+*.ebnf text eol=lf
+*.toml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+
+# Documentation
+*.md text eol=lf
+*.adoc text eol=lf
+*.txt text eol=lf
+LICENSE* text eol=lf
+*.rst text eol=lf
+
+# Scripts
+*.sh text eol=lf
+*.bash text eol=lf
+Justfile text eol=lf
+Makefile text eol=lf
+
+# Configuration
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.editorconfig text eol=lf
+
+# Nix files
+*.nix text eol=lf
+flake.lock text eol=lf
+
+# Web files
+*.html text eol=lf
+*.css text eol=lf
+*.svg text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.wasm binary
+*.rlib binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.tgz binary
+*.bz2 binary
+
+# Vendored dependencies (exclude from statistics)
+vendor/** linguist-vendored
+target/** linguist-generated
+dist/** linguist-generated
+node_modules/** linguist-vendored
+
+# Documentation (mark as documentation)
+docs/** linguist-documentation
+*.md linguist-documentation
+*.adoc linguist-documentation
+
+# Language detection overrides
+*.jtv linguist-language=Julia-the-Viper
+*.pest linguist-language=PEG
+
+# Diff settings
+*.rs diff=rust
+*.ts diff=typescript
+*.jtv diff
+
+# Merge strategies
+CHANGELOG.md merge=union
+CONTRIBUTORS.md merge=union
+
+# Export-ignore (exclude from release archives)
+.github/ export-ignore
+.gitlab/ export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
+tests/ export-ignore
+benches/ export-ignore
+examples/ export-ignore
+docs/ export-ignore
+*.md export-ignore
+*.adoc export-ignore
+
+# Security files (keep in exports)
+SECURITY.md -export-ignore
+LICENSE* -export-ignore
+.well-known/ -export-ignore
+
+# Lockfiles (keep in exports for reproducibility)
+Cargo.lock -export-ignore
+flake.lock -export-ignore
