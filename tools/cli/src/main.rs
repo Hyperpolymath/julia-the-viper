@@ -1,3 +1,8 @@
+// SPDX-License-Identifier: MIT OR GPL-3.0-or-later OR Palimpsest-0.8
+// SPDX-FileCopyrightText: 2025 Julia the Viper Contributors
+//
+// Julia the Viper - Command Line Interface
+
 // Julia the Viper - Command Line Interface
 use clap::{Parser, Subcommand};
 use colored::*;

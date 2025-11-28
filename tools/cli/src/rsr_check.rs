@@ -1,3 +1,8 @@
+// SPDX-License-Identifier: MIT OR GPL-3.0-or-later OR Palimpsest-0.8
+// SPDX-FileCopyrightText: 2025 Julia the Viper Contributors
+//
+// RSR (Rhodium Standard Repository) Compliance Checker
+
 // RSR (Rhodium Standard Repository) Compliance Checker
 use colored::*;
 use std::fs;

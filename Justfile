@@ -168,3 +168,38 @@ init-hooks:
 # Quick development cycle: format, lint, test, run
 dev file: fmt lint test
     just run {{file}}
+
+# Check RSR (Rhodium Standard Repository) compliance
+rsr-check:
+    @echo "Checking RSR compliance..."
+    cd tools/cli && cargo run -- rsr-check
+    @echo "✓ RSR compliance check complete"
+
+# Validate repository meets RSR Gold standard
+validate: rsr-check
+    @echo "Validating repository structure..."
+    @test -f README.adoc || (echo "❌ README.adoc missing" && exit 1)
+    @test -f LICENSE.txt || (echo "❌ LICENSE.txt missing" && exit 1)
+    @test -f GOVERNANCE.adoc || (echo "❌ GOVERNANCE.adoc missing" && exit 1)
+    @test -f CONTRIBUTING.adoc || (echo "❌ CONTRIBUTING.adoc missing" && exit 1)
+    @test -f CODE_OF_CONDUCT.adoc || (echo "❌ CODE_OF_CONDUCT.adoc missing" && exit 1)
+    @test -f SECURITY.md || (echo "❌ SECURITY.md missing" && exit 1)
+    @test -f CHANGELOG.md || (echo "❌ CHANGELOG.md missing" && exit 1)
+    @test -f TPCF.md || (echo "❌ TPCF.md missing" && exit 1)
+    @test -f REVERSIBILITY.md || (echo "❌ REVERSIBILITY.md missing" && exit 1)
+    @test -f .well-known/security.txt || (echo "❌ .well-known/security.txt missing" && exit 1)
+    @test -f .well-known/ai.txt || (echo "❌ .well-known/ai.txt missing" && exit 1)
+    @test -f .well-known/humans.txt || (echo "❌ .well-known/humans.txt missing" && exit 1)
+    @test -f .well-known/consent-required.txt || (echo "❌ .well-known/consent-required.txt missing" && exit 1)
+    @test -f .well-known/provenance.json || (echo "❌ .well-known/provenance.json missing" && exit 1)
+    @test -f Justfile || (echo "❌ Justfile missing" && exit 1)
+    @test -f flake.nix || (echo "❌ flake.nix missing" && exit 1)
+    @test -f .gitlab-ci.yml || (echo "❌ .gitlab-ci.yml missing" && exit 1)
+    @test -f .gitattributes || (echo "❌ .gitattributes missing" && exit 1)
+    @test -f FUNDING.yml || (echo "❌ FUNDING.yml missing" && exit 1)
+    @echo "✓ Repository structure validated"
+    @echo "✓ RSR Gold standard requirements met"
+
+# Full pre-release validation
+pre-release: clean install build test lint validate
+    @echo "✓ Pre-release validation complete"

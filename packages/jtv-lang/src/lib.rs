@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT OR GPL-3.0-or-later OR Palimpsest-0.8
+// SPDX-FileCopyrightText: 2025 Julia the Viper Contributors
+//
 // Julia the Viper - Core Language Implementation
 // Harvard Architecture: Control (Turing-complete) + Data (Total)
 
